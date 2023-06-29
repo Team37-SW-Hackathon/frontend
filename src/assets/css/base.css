@@ -1,0 +1,49 @@
+/*
+typo
+*/
+
+.p-text--em {
+    font-weight: bold;
+  }
+  
+  .p-text--red {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--orange-dark);
+  }
+  
+  .error-text {
+    font-size: 1.4rem;
+    color: var(--orange-dark);
+  }
+  
+  .jumbotron-text {
+    font-size: 2.4rem;
+    font-weight: bold;
+  }
+  
+  .jumbotron-text--em {
+    color: var(--orange-dark);
+  }
+
+  @media (max-width: 768px) {
+    .p-text--red {
+      font-size: 1.4rem;
+    }
+    
+    .error-text {
+      font-size: 1.2rem;
+    }
+    
+    .jumbotron-text {
+      font-size: 1.6rem;
+    }
+  }
+
+/*
+style
+*/
+
+.bottom-padding {
+    padding-bottom: 1rem;
+  }

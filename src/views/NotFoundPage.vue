@@ -1,0 +1,38 @@
+<template>
+  <div class="container">
+    <h3>페이지를 찾을 수 없습니다.</h3>
+    <div class="link" @click="goBack">이전 페이지로 돌아가기</div>
+  </div>
+</template>
+
+<script>
+export default {
+  methods: {
+    goBack() {
+      this.$router.go(-1);
+    },
+  },
+};
+</script>
+
+<style scoped>
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  margin-bottom: 1.2rem;
+}
+
+.link {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-decoration-line: underline;
+  color: var(--gray02);
+  cursor: pointer;
+}
+</style>

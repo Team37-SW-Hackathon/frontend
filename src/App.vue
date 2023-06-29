@@ -1,21 +1,12 @@
 <template>
-    <div id = "app">
-        <CommonHeader />
-    </div>
+  <the-header></the-header>
+  <router-view></router-view>
 </template>
 
 <script>
-import CommonHeader from './components/common/CommonHeader';
-
 export default {
-    name:'App',
-    components: {
-        CommonHeader,
-        
-    }
-}
+  name: 'App',
+};
 </script>
 
-<style>
-html.body{padding:0; margin:0;}
-</style>
+<style scoped></style>
