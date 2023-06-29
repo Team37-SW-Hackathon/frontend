@@ -1,19 +1,18 @@
 <template>
-    <div id = "app">
-        <Header />
-
+    <div id="app">
+      <CommonHeader />
 
     </div>
-</template>
+  </template>
+    
 
 <script>
-import Header from './components/common/commonheader.vue';
+import CommonHeader from './components/common/CommonHeader';
 
 export default{
     name:'App',
     components: {
-        Header,
-        
+        CommonHeader
     }
 }
 </script>
