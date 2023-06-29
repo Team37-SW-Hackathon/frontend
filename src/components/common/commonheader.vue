@@ -14,13 +14,18 @@
 export default {
   method: {
     createExam() {
-      //클릭 시 실행되는 곳
+      //클릭 시 실행
+      this.activeItem = 'create';
     },
     viewExam() {
       //클릭 시 실행되는 곳
-    }
-  }
-}
+      this.activeItem = 'view';
+    },
+    isActive(item) {
+      return this.activeItem == item;
+    },
+  },
+};
 </script>
 
 <style scoped>
