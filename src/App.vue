@@ -1,17 +1,16 @@
 <template>
     <div id = "app">
-        <CommonHeader />
+        <MakePage />
     </div>
 </template>
 
 <script>
-import CommonHeader from './components/common/CommonHeader';
+import MakePage from './views/QuizMakePage';
 
 export default {
     name:'App',
     components: {
-        CommonHeader,
-        
+        MakePage,
     }
 }
 </script>
