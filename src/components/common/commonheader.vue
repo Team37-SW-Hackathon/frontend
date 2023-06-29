@@ -1,10 +1,10 @@
 <template>
     <header>
-        <h1><a href="#" class ="logo"><h1>Youngja</h1>
+        <h1><a class ="logo">Youngja</a></h1>
             <div class ="menu">
               <ul class="menulist">
-                <li><a href = "javascript:;" @click="createExam" : class="{'active' : isActive('create')}">시험지 만들기</a></li>
-                <li><a href = "javascript:;" @click="viewExam" : class="{'active' : isActive('view')}">내 시험지함</a></li>
+                <li><a href = "javascript:;" @click="createExam" :class="{'active' : isActive('create')}">시험지 만들기</a></li>
+                <li><a href = "javascript:;" @click="viewExam" :class="{'active' : isActive('view')}">내 시험지함</a></li>
               </ul>
             </div>
     </header>
@@ -12,7 +12,12 @@
 
 <script>
 export default {
-  method: {
+  data() {
+    return {
+      activeItem: '',
+    };
+  },
+  methods: {
     createExam() {
       //클릭 시 실행
       this.activeItem = 'create';
@@ -29,10 +34,52 @@ export default {
 </script>
 
 <style scoped>
-header{width:100%; text-align:center; position:relative; height:120px; border-bottom:1px solid #35495e}
-header h1{position:absolute; top:0; left:50px;}
-header ul.menulist:after{display:block; clear:both; content:'';}
-header ul.menulist{position: absolute; top:20px; right:50px;}
-header ul.li{float:left; padding:10px 20px; list-style: none;}
-a{text-decoration:none; color:#333};
+header {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  height: 60px;
+  border-bottom: 3px solid #35495e;
+}
+
+header h1 {
+  position: absolute;
+  top: 0;
+  left: 2px;
+}
+
+header ul.menulist {
+  position: relative;
+  top: 15px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header ul.menulist li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+header ul.menulist li:last-child {
+  margin-right: 0;
+}
+
+header ul.menulist li a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+header ul.menulist li a.active {
+  background-color: #35495e;
+  color: #fff;
+}
+
+header ul.menulist li a:hover {
+  background-color: #eaeaea;
+}
 </style>
+

@@ -1,18 +1,16 @@
 <template>
     <div id = "app">
-        <Header />
-
-
+        <CommonHeader />
     </div>
 </template>
 
 <script>
-import Header from './components/common/commonheader.vue';
+import CommonHeader from './components/common/CommonHeader';
 
-export default{
+export default {
     name:'App',
     components: {
-        Header,
+        CommonHeader,
         
     }
 }
