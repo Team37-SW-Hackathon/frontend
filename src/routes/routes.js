@@ -1,9 +1,14 @@
 export default [
     {
       path: '/',
-      redirect: { name: 'home' },
-      component: () => import('@/views/QuizCreatePage.vue'),
+      redirect: { name: 'create' },
+      component: () => import('@/views/HomePage.vue'),
     },
+    {
+        path: '/create',
+        name: 'create',
+        component: () => import('@/views/QuizCreatePage.vue'),
+      },
     {
       path: '/list',
       name: 'list',

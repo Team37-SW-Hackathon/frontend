@@ -1,6 +1,6 @@
 <template>
-  <div >
-    <h3>페이지를 afgdfs찾을 수 없습니다.</h3>
+  <div>
+    <h3>ㅋ퀴즈만들기</h3>
   </div>
 </template>
 
