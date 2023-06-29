@@ -44,8 +44,9 @@ header {
 
 header h1 {
   position: absolute;
-  top: 0;
-  left: 2px;
+  top: 5px;
+  left: 15px;
+  font-size: 60px;
 }
 
 header ul.menulist {
